@@ -276,5 +276,5 @@ body {
 .footer__content > span {
     text-align: center;
     color: #fff;
-    font-size: clamp(.8rem, 1.01vw, 1.2rem);
+    font-size: clamp(.6rem, 1.01vw, 1.2rem);
 }
