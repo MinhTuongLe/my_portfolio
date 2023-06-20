@@ -61,11 +61,13 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 
-
-
 // const getInfo = $(".info");
 // const infoOffsetHeightPx = getInfo.offsetHeight;
 // const infoOffsetHeightVh = (infoOffsetHeightPx / window.innerHeight) * 100;
 // const footerHeight = referenceHeightVh - infoOffsetHeightVh
 // const getFooter = $('.footer')
 // getFooter.style.height = footerHeight + "vh"
+
+const getCurrentYear = $(".current-year");
+let currentDate = new Date();
+getCurrentYear.textContent = currentDate.getFullYear();
