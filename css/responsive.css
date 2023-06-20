@@ -102,7 +102,7 @@
     }
 
     .card {
-        height: 40vh;
+        height: 70vh;
     }
 
     .icon-button {
@@ -198,7 +198,7 @@
     }
 
     .card {
-        height: 30vh;
+        height: 50vh;
     }
 
     .icon-button {
@@ -278,7 +278,7 @@
     }
 
     .card {
-        height: 20vh;
+        height: 40vh;
     }
 
     .icon-button {
@@ -328,15 +328,15 @@
 
 @media (max-width: 319px) {
     .grid.wide {
-        max-width: 260px;
+        max-width: 240px;
     }
 
     .footer__wide {
-        width: 260px;
+        width: 240px;
     }
 
     .footer__content {
-        width: 260px;
+        width: 240px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -360,7 +360,7 @@
     }
 
     .card {
-        height: 10vh;
+        height: 30vh;
     }
 
     .icon-button {

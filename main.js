@@ -51,15 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// const getHeaderMenuItems = $$(".header__content a");
+const getHeaderMenuItems = $$(".header__content a");
 
-// getHeaderMenuItems.forEach((item) => {
-//   item.addEventListener("click", function() {
-//     if (window.innerWidth <= 767) {
-//       hideHeaderMenu();
-//     }
-//   });
-// });
+getHeaderMenuItems.forEach((item) => {
+  item.addEventListener("click", function() {
+    if (window.innerWidth <= 680) {
+      hideHeaderMenu();
+    }
+  });
+});
 
 // const getInfo = $(".info");
 // const infoOffsetHeightPx = getInfo.offsetHeight;
