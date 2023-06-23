@@ -41,7 +41,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 2;
 }
 
 .header__content {
@@ -192,6 +192,17 @@ body {
     }
 }
 
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .4;
+    }
+}
+
 .contact {
     background-color: #303841;
     height: 80vh;
@@ -282,4 +293,16 @@ body {
     text-align: center;
     color: #fff;
     font-size: clamp(.6rem, 1.01vw, 1.2rem);
+}
+
+.overlay {
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    animation: fadeIn 0.3s forwards;
 }

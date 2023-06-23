@@ -1,33 +1,31 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+
+// Open Menu 
 const getHeaderMenu = $(".header__menu");
 const getHeaderContent = $(".header__content");
 const getHeaderCloseIcon = $(".header__close-icon");
+const getOverlay = $('.overlay')
 
 const displayHeaderMenu = () => {
   getHeaderContent.style.transform = "translateX(0)";
+  getOverlay.style.display = 'block'
 };
 
-const hideHeaderMenu = (event) => {
+const hideHeaderMenu = () => {
   getHeaderContent.style.transform = "translateX(100%)";
-  event.stopPropagation();
+  getOverlay.style.display = 'none'
 };
 
 getHeaderMenu.addEventListener("click", displayHeaderMenu);
 getHeaderCloseIcon.addEventListener("click", hideHeaderMenu);
+getOverlay.addEventListener("click", hideHeaderMenu);
+//
+
 
 const getHeader = $(".header");
 const headerOffsetHeightPx = getHeader.offsetHeight;
-// const headerOffsetHeightVh = (headerOffsetHeightPx / window.innerHeight) * 100;
-// const referenceHeightVh = 100 - headerOffsetHeightVh;
-
-// const getReference = $(".reference");
-// getReference.style.marginTop = headerOffsetHeightVh + "vh";
-// getReference.style.height = referenceHeightVh + "vh";
-
-// const getAbout = $(".contact");
-// getAbout.style.height = referenceHeightVh + "vh";
 
 // Scroll to each section
 document.addEventListener("DOMContentLoaded", function () {
@@ -50,6 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+//
+
+
 
 const getHeaderMenuItems = $$(".header__content a");
 
@@ -61,13 +62,11 @@ getHeaderMenuItems.forEach((item) => {
   });
 });
 
-// const getInfo = $(".info");
-// const infoOffsetHeightPx = getInfo.offsetHeight;
-// const infoOffsetHeightVh = (infoOffsetHeightPx / window.innerHeight) * 100;
-// const footerHeight = referenceHeightVh - infoOffsetHeightVh
-// const getFooter = $('.footer')
-// getFooter.style.height = footerHeight + "vh"
 
+
+
+// Get current year
 const getCurrentYear = $(".current-year");
 let currentDate = new Date();
 getCurrentYear.textContent = currentDate.getFullYear();
+//
