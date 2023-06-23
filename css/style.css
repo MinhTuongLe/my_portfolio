@@ -132,7 +132,7 @@ body {
 }
 
 .card {
-    height: 24vw;
+    height: 100%;
     display: block;
     text-decoration: none;
 }
@@ -159,6 +159,7 @@ body {
     color: #fff;
     font-size: clamp(1.4rem, 1.68vw, 2rem);
     font-weight: 400;
+    text-align: center;
 }
 
 .project__name span {
@@ -168,6 +169,7 @@ body {
     font-size: clamp(1rem, 1.18vw, 1.4rem);
     opacity: 0;
     transition: visibility linear 0.3s, opacity 0.3s ease;
+    text-align: center;
 }
 
 .project__name:hover span {
@@ -201,13 +203,13 @@ body {
 
 .info__group {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 72%;
 }
 
 .info h1 {
     color: #fff;
     text-align: center;
-    font-size: clamp(1.4rem, 3.37vw, 4rem);
+    font-size: clamp(1.2rem, 3.37vw, 4rem);
     padding: 0 12px;
 }
 
@@ -222,6 +224,9 @@ body {
 
 .icons-list {
     margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-button {
@@ -262,11 +267,11 @@ body {
 }
 
 .footer__wide {
-    max-width: 1200px;
+    max-width: 80%;
 }
 
 .footer__content {
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
